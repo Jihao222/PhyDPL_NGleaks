@@ -22,24 +22,24 @@ config = tf.compat.v1.ConfigProto(gpu_options=tf.compat.v1.GPUOptions(allow_grow
 sess = tf.compat.v1.Session(config=config)
 tf.compat.v1.keras.backend.set_session(sess)
 import matplotlib.font_manager as fm
-myfont = fm.FontProperties(fname='./font/timesbd.ttf',size=40,weight='light')
+myfont = fm.FontProperties(fname='./font/timesbd.ttf',size=52,weight='normal')
 linewid = 4
-tickl = 8
+tickl = 12
 
 class Config:
     MODEL_PATH = './model/amone_0.1_1.h5'
     TRP = './datasets/train/all'
-    TSP = './datasets/shinei_2/93622_0.5_5_111.68272733688354/hotmap/'
+    TSP = './datasets/shiwai_2/88022'
     DPR = 0.1
     DPS = True
     BS1 = 550
-    BS2 = 733
+    BS2 = 1175
     DSZ = (64,64,1)
     MSC = 200
     CLA = 2
     BSZ = 102
     EPS = 1000
-    PAT = './uncer_img936_5'
+    PAT = './uncer_img880_5'
     STA = False
 
 
@@ -260,7 +260,7 @@ def analyse_model_prediction(model,image11, label = None, forward_passes = Confi
         
         #extracted_std[i] = model_output_distribution.stddev().numpy().flatten()
 
-    fig, ax2 = plt.subplots(nrows=1, ncols=1, figsize=(10, 7))
+    fig, ax2 = plt.subplots(nrows=1, ncols=1, figsize=(14, 10))
     #plt.xticks(fontsize = 16, rotation = 45)
     #plt.yticks(fontsize = 16)
 
@@ -390,7 +390,7 @@ def analyse_model_prediction(model,image11, label = None, forward_passes = Confi
 
     #plt.show()
     imgpath = os.path.join(Config.PAT,str(iinum)+'.jpg')
-    plt.savefig(imgpath,bbox_inches='tight',dpi=720)
+    plt.savefig(imgpath,bbox_inches='tight')
 
 
 
