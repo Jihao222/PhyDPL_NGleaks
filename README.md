@@ -10,3 +10,9 @@ This repository contains keras implementations of  variational Bayesian spatial-
 * keras=2.2.5
 * h5py=2.10.0
 * opencv-python=4.4.0.46
+
+```Bash
+conda install --yes --file requirements.txt
+``` 
+
+## Sample usage
