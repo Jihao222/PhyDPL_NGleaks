@@ -27,6 +27,3 @@ conda install --yes --file requirements.txt
 - Here are some examples, trained on `cylinder_flow` dataset.
 <img src="results/example1.png" width="700" height="400"/>
 <img src="results/example2.png" width="700" height="400"/>
-
-## Compare
------------------------
