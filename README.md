@@ -17,7 +17,12 @@ conda install --yes --file requirements.txt
 ``` 
 
 ## Sample usage
-* Dowmload
+* Download thermal images of outdoor site from the script <https://pan.baidu.com/s/1KoFAmjz6vlAq2cIhuRS08Q?pwd=y2nb> with code `y2nb`. With them, the Variational Bayesian Spatial-Temporal neural network model could be developed by running `python vbstnn_shiwai.py` 
+
+链接：https://pan.baidu.com/s/1KoFAmjz6vlAq2cIhuRS08Q?pwd=y2nb 
+提取码：y2nb 
+--来自百度网盘超级会员V1的分享
+
 * Dowmload
 * Dowmload
 * Dowmload
